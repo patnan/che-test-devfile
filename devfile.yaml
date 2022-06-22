@@ -1,16 +1,10 @@
-apiVersion: 1.0.0
+schemaVersion: 2.1.0
 metadata:
   name: petclinic-dev-environment
+  version: 2.0.0
+
 projects:
   - name: petclinic
     source:
       type: git
       location: 'https://github.com/che-samples/web-java-spring-petclinic.git'
-components:
-  - alias: theia-editor
-    type: cheEditor
-    id: eclipse/che-theia/next
-  - alias: exec-plugin
-    type: chePlugin
-    id: eclipse/che-machine-exec-plugin/0.0.1
-
