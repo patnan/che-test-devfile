@@ -1,6 +1,18 @@
-v2.1
----
 schemaVersion: 2.1.0
 metadata:
-  name: devfile-sample
-  version: 2.1.0
+  name: python-hello-world
+  namespace: admin-che
+projects:
+  - name: python-hello-world
+    zip:
+      location: 'http://devfile-registry.eclipse-che.svc:8080/resources/v2/python-hello-world.zip'
+components: []
+commands:
+  - exec:
+      commandLine: python3 hello-world.py
+      component: tools
+      group:
+        kind: run
+      label: Run application
+      workingDir: '${PROJECT_SOURCE}'
+    id: run-application
