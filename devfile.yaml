@@ -6,7 +6,12 @@ projects:
     git:
       remotes:
         origin: "https://bitbucket.org/patnan/open-che-test.git"
-components: []
+components:
+  - name: go
+    container:
+      image: ubuntu:focal
+      memoryLimit: 512Mi
+      command: ['sleep', 'infinity']
 commands:
   - exec:
       commandLine: python3 hello-world.py
