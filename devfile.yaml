@@ -1,11 +1,11 @@
 schemaVersion: 2.1.0
 metadata:
   name: python-hello-world
-  namespace: admin-che
 projects:
-  - name: python-hello-world
-    zip:
-      location: 'http://devfile-registry.eclipse-che.svc:8080/resources/v2/python-hello-world.zip'
+  - name: open-che-test
+    git:
+      remotes:
+        origin: "https://bitbucket.org/patnan/open-che-test.git"
 components: []
 commands:
   - exec:
