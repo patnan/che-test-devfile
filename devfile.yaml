@@ -17,10 +17,11 @@ commands:
       workingDir: '${PROJECT_SOURCE}'
     id: run-application
   - exec:
-      commandLine: cat hello-world.py
+      commandLine: cat README.md
       component: tools
       group:
         kind: run
-      label: cat code
+      label: View Readme
       workingDir: '${PROJECT_SOURCE}'
-    id: view-code
+    id: view-readme
+
