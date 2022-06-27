@@ -16,3 +16,11 @@ commands:
       label: Run application
       workingDir: '${PROJECT_SOURCE}'
     id: run-application
+  - exec:
+      commandLine: cat hello-world.py
+      component: tools
+      group:
+        kind: run
+      label: cat code
+      workingDir: '${PROJECT_SOURCE}'
+    id: view-code
