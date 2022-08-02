@@ -9,7 +9,7 @@ projects:
 components:
   - name: go
     container:
-      image: ubuntu:focal
+      image: 192.168.49.2:5000/u:focal
       memoryLimit: 512Mi
       command: ['sleep', 'infinity']
 commands:
