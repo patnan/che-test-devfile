@@ -5,7 +5,7 @@ projects:
   - name: open-che-test
     git:
       remotes:
-        origin: "https://bitbucket.org/patnan/open-che-test.git"
+        origin: "https://github.com/patnan/che-test-devfile"
 components:
   - name: go
     container:
