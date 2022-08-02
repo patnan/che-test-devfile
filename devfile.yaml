@@ -7,9 +7,9 @@ projects:
       remotes:
         origin: "https://github.com/patnan/che-test-devfile"
 components:
-  - name: go
+  - name: python
     container:
-      image: 192.168.49.2:5000/u:focal
+      image: 192.168.49.2:5000/python
       memoryLimit: 512Mi
       command: ['sleep', 'infinity']
 commands:
